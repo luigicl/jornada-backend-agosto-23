@@ -43,6 +43,7 @@ async function main() {
   });
 
  
+  /*
   // Create -> [POST] /herois Post de um item por vez
   app.post("/herois", async function (req, res) {
     // console.log(req.body, typeof req.body);
@@ -56,9 +57,9 @@ async function main() {
     // Enviamos uma resposta de sucesso
     res.status(201).send(item);
   });
+*/
 
 
-/*
 // Create -> [POST] /herois Post de vários itens ao mesmo tempo vez
 app.post("/herois", async function (req, res) {
   // console.log(req.body, typeof req.body);
@@ -75,7 +76,7 @@ app.post("/herois", async function (req, res) {
   // Enviamos uma resposta de sucesso
   res.status(201).send(itens);
 });
-*/
+
 
 
   // Read By Id -> [GET] /herois/:id

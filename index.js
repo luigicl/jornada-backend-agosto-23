@@ -1,6 +1,6 @@
 const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
-const cors = require("cors");
+//const cors = require("cors");
 
 // const url = "mongodb://localhost:27017";
 // const url = "mongodb://127.0.0.1:27017";
@@ -42,7 +42,7 @@ async function main() {
     res.send(itens);
   });
 
-  
+ 
   // Create -> [POST] /herois Post de um item por vez
   app.post("/herois", async function (req, res) {
     // console.log(req.body, typeof req.body);
@@ -56,6 +56,7 @@ async function main() {
     // Enviamos uma resposta de sucesso
     res.status(201).send(item);
   });
+
 
 /*
 // Create -> [POST] /herois Post de vários itens ao mesmo tempo vez
